@@ -4,9 +4,9 @@ public class Camisa extends Roupa{
 	
 	private String tamanhoCamisa;
 	
-	public Camisa(String modelo, int codigo, char genero, String tamanhoCamisa) {
+	public Camisa(String modelo, int codigo, char genero, int tipo, String tamanhoCamisa) {
 		// puxando os dados de conta
-		super(modelo, codigo, genero);
+		super(modelo, codigo, genero, tipo);
 		// criando um novo atributo
 		this.tamanhoCamisa = tamanhoCamisa;
 	}

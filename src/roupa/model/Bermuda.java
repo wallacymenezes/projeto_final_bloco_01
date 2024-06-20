@@ -4,9 +4,9 @@ public class Bermuda extends Roupa{
 	
 	private int tamanhoBermuda;
 	
-	public Bermuda(String modelo, int codigo, char genero, int tamanhoBermuda) {
+	public Bermuda(String modelo, int codigo, char genero, int tipo, int tamanhoBermuda) {
 		// puxando os dados de conta
-		super(modelo, codigo, genero);
+		super(modelo, codigo, genero, tipo);
 		// criando um novo atributo
 		this.setTamanhoBermuda(tamanhoBermuda);
 	}
