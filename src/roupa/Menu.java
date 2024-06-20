@@ -2,13 +2,22 @@ package roupa;
 
 import java.util.Scanner;
 
+import roupa.model.Bermuda;
+import roupa.model.Camisa;
+
 public class Menu {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
 		// Declarando as variavéis
 		int opc;
-
+		
+		//criando objetos para testes - Segunda Etapa
+		Camisa florida = new Camisa("Florida", 1, 'M', "GG");
+		florida.visualizar();
+		Bermuda tectell = new Bermuda("Tectell", 2, 'M', 55);
+		tectell.visualizar();
+		
 		while (true) {
 
 			System.out.println("*****************************************************");
@@ -44,7 +53,7 @@ public class Menu {
 				break;
 			case 2:
 				System.out.println("Listar Pedidos\n\n");
-
+				
 				break;
 			case 3:
 				System.out.println("Buscar Pedido - por número\n\n");
