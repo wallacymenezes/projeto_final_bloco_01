@@ -13,4 +13,6 @@ public interface RoupaRepository {
 	public void atualizar(Roupa roupa);
 
 	public void deletar(int codigo);
+	
+	public int gerarCodigo();
 }

@@ -89,19 +89,19 @@ public class Menu {
 
 				// Camisa florida = new Camisa("Florida", 1, 'M', "GG");
 				switch (tipo) {
-				case 1 -> {
-					System.out.println("Digite o tamanho da Camisa (PP - P - M - G - GG - XG - XXG - XXXG): ");
-					sc.skip("\\R?");
-					tamanhoC = sc.nextLine();
-
-					roupas.cadastrar(new Camisa(modelo, roupas.gerarCodigo(), subG, tipo, tamanhoC));
-				}
-				case 2 -> {
-					System.out.println("Digite o tamanho da Bermuda (Em número): ");
-					tamanhoB = sc.nextInt();
-
-					roupas.cadastrar(new Bermuda(modelo, roupas.gerarCodigo(), subG, tipo, tamanhoB));
-				}
+					case 1 -> {
+						System.out.println("Digite o tamanho da Camisa (PP - P - M - G - GG - XG - XXG - XXXG): ");
+						sc.skip("\\R?");
+						tamanhoC = sc.nextLine();
+	
+						roupas.cadastrar(new Camisa(modelo, roupas.gerarCodigo(), subG, tipo, tamanhoC));
+					}
+					case 2 -> {
+						System.out.println("Digite o tamanho da Bermuda (Em número): ");
+						tamanhoB = sc.nextInt();
+	
+						roupas.cadastrar(new Bermuda(modelo, roupas.gerarCodigo(), subG, tipo, tamanhoB));
+					}
 				}
 
 				keyPress();

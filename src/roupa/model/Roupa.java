@@ -45,7 +45,11 @@ public abstract class Roupa {
 	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
-
+	
+	public void mostraValor() {
+		System.out.println("Mostrando valor do produto");
+	}
+	
 	public void visualizar() {
 		
 		System.out.println("\n\n*********************************************");
@@ -55,6 +59,5 @@ public abstract class Roupa {
 		System.out.println("Codigo: " + this.codigo);
 		System.out.println("Genero: " + this.genero);
 		System.out.println("Tipo (1 - camisa | 2 - bermuda): " + this.tipo);
-
 	}
 }

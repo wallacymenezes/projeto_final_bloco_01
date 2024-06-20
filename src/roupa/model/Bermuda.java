@@ -22,6 +22,11 @@ public class Bermuda extends Roupa{
 	@Override
 	public void visualizar() {
 		super.visualizar();
-		System.out.println("Tamanho da Bermuda: " + tamanhoBermuda);
+		System.out.println("Tamanho da Bermuda: " + this.getTamanhoBermuda());
+	}
+	
+	@Override
+	public void mostraValor() {
+		System.out.println("Mostrando valor da Bermuda");
 	}
 }

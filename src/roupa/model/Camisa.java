@@ -22,6 +22,11 @@ public class Camisa extends Roupa{
 	@Override
 	public void visualizar() {
 		super.visualizar();
-		System.out.println("Tamanho da Camisa: " + tamanhoCamisa);
+		System.out.println("Tamanho da Camisa: " + this.getTamanhoCamisa());
+	}
+	
+	@Override
+	public void mostraValor() {
+		System.out.println("Mostrando valor da Camisa");
 	}
 }

@@ -58,6 +58,7 @@ public class RoupaController implements RoupaRepository{
 		}
 	}
 	
+	@Override
 	public int gerarCodigo() {
 		return ++codigo;
 	}
